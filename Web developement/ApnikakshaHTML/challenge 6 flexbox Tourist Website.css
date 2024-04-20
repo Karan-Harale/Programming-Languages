@@ -1,0 +1,138 @@
+* {
+
+text-decoration: none;
+}
+
+body{
+    backgroundss-image: url("http://cdn.cnn.com/cnnnext/dam/assets/170123102557-beautiful-india-valley-of-flowers-flickr-alosh-bennett-4951216953.jpg");
+background-repeat: no-repeat; 
+}
+
+header {
+background-image: url("https://learnfrenzy.com/assets/images/gk/Indian-Culture/india_galance.png");  padding: 5px;
+background-size: 50% 100%;
+background-repeat: no-repeat;
+background-position: center;
+color: rgb(8, 253, 221);
+font-weight: bolder;
+  text-align: left;
+  border-radius: 2px;
+margin-bottom: 0%;
+}
+
+nav {
+    padding: 10px;
+    background-color: black;
+display: block;
+position: sticky;
+ top: 0px;
+}
+
+
+
+.navbar a {
+  font-family: "Times New Roman", Times, serif;
+  font-weight: lighter;
+  font-size: 18px;
+  color: aliceblue;
+  margin: 10px;
+  padding: 10px;
+}
+
+.menu{
+    position: absolute;
+    background-color: inherit;
+}
+.dropbox{
+    display: none;
+    position: absolute;
+    background-color: rgb(14, 13, 13);
+    
+}
+
+.dropbox a{
+ color: rgb(255, 255, 255);
+    text-align: center;
+    display: block;
+}
+
+.dropbox a:hover{
+background-color: rgb(90, 89, 89);
+color: azure;
+}
+
+
+.menu:hover{
+    cursor: pointer;
+
+}
+.menu:hover .dropbox{
+    display: block;
+}
+
+
+nav a:hover{
+    background-color: aliceblue;
+    color: black;
+    border-radius: 2px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.right{
+    margin-left: 150px;
+}
+
+
+
+
+
+.flex {
+  margin-top: 100px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flex div {
+    background-color: aliceblue;
+
+  width: 250px;
+  height: 270px;
+  flex-grow: 1;
+  margin: 25px;
+  border-radius: 5px;
+  text-align: justify;
+  /* giving some border-shade to each boxes */
+  box-shadow: 5px 0px 15px 2px;
+  overflow: hidden;
+}
+
+h4 {
+  margin-top: 0;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+.readmore {
+  width: 100%;
+  padding: 15px;
+  background-color: rgb(65, 60, 60);
+  color: rgb(245, 240, 240);
+  border: none;
+}
+
+.readmore:hover {
+  background-color: rgb(46, 44, 44);
+  cursor: pointer;
+}

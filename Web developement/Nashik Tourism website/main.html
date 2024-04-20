@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nashik Tourist Guide</title>
+    <!-- <link rel="stylesheet" href="styles.css"> -->
+
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+        <h1>Nashik Tourist Guide</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#places">Places to Visit</a></li>
+                <li><a href="#booking">Book Now</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h2>Welcome to Nashik</h2>
+        <p>Explore the beauty of Nashik and its wonderful tourist destinations.</p>
+    </section>
+
+    <section id="places">
+        <h2>Places to Visit</h2>
+        <div class="place">
+            <img src="place1.jpg" alt="Place 1">
+            <h3>Place 1</h3>
+            <p>Description of Place 1.</p>
+        </div>
+        <div class="place">
+            <img src="place2.jpg" alt="Place 2">
+            <h3>Place 2</h3>
+            <p>Description of Place 2.</p>
+        </div>
+        <!-- Add more places here -->
+    </section>
+
+    <section id="booking">
+        <h2>Book Your Trip</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="place">Select Place:</label>
+            <select id="place" name="place">
+                <option value="place1">Place 1</option>
+                <option value="place2">Place 2</option>
+                <!-- Add more places here -->
+            </select>
+            <button type="submit">Book Now</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Nashik Tourist Guide</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom Manipulation</title>
+</head>
+<body>
+    <ul>
+        <li>First element</li>
+        <li>Second element</li>
+        <li>Third element</li>
+    </ul>
+
+    <script>
+        // root node
+console.log(document.documentElement);  
+console.log(document.body);
+console.log(document.head);
+
+// child node
+
+// console.log(document.bo  dy.childNodes);
+// console.log(document.body.children);
+// console.log(document.body.firstChild);
+// console.log(document.body.secondChild);
+
+// console.log(document.body.firstElementChild);
+// console.log(document.body.secondElementChild);
+// console.log(document.body.children);
+
+
+
+// for(node of document.body.children){
+//     console.log(node)
+// }
+
+// let a=Array.from(document.body.children);
+// console.log(a)
+
+const l=(document.body.children[0]);
+console.log(l.previousElementSibling)
+</script>
+</body>
+</html>

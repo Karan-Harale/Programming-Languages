@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="form1.css">
+    <title>My Form</title>
+</head>
+<body>
+    <div class="container">
+        <form action="">
+
+    
+        <h1> My Forms</h1>
+        <h2>Personal Details</h2>
+        <h4 class="req">All Fieds are mendatory  </h4>
+        <hr>
+        
+        <p>Name <input type="text" name="name" id="name" required placeholder="Your Name"></p>
+        <p>Email Address <input type="email" name="emai" id="email"required placeholder="abc@xyz.com"></p>
+        <p>Mobile No. <input type="number" name="number" id="number" required ></p>
+        
+        <p> Institute <select name="Institute* " id="Institute">
+            <option value="">--Select Institute--</option>
+            <option value="Junior Section (XI,XII)">Junior Section (XI,XII)</option>
+            <option value="Institute of Polytechnic">Institute of Polytechnic</option>
+            <option value="Institute of Engineering">Institute of Engineering</option>
+            <option value="Institute of Pharmacy">Institute of Pharmacy</option>
+            <option value="Institute of MBA">Institute of MBA</option>
+        </select>
+
+        Department <select name="Department* " id="Department">
+            <option value="">--Select Department--</option>
+           <option value="CE">CE</option>
+            <option value="ME">ME</option>
+            <option value="IT">IT</option>
+            <option value="E&TC">E&TC</option>
+            <option value="EE">EE</option>
+        </select>
+
+            Class <select name="class* " id="class">
+                <option value="">--Select Class--</option>
+    
+                <option value="FY">FY</option>
+                <option value="SY">SY</option>
+                <option value="TY">TY</option>
+                <option value="TY">Final Year</option>
+            </select>
+
+        <p>Roll.No <input type="number" name="rollno" id="rollno" required></p>
+
+        <input type="reset" value="Reset">
+        <br>
+         <input type="submit" value="Submit">
+        
+        
+</form>
+</div>  
+</body>
+</html>

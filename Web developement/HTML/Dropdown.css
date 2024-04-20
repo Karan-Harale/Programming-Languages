@@ -1,0 +1,47 @@
+.button{
+    background-color: blue;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    border: none;
+    min-width:150px;
+
+}
+
+.main{
+    position: relative;
+    display: inline-block;
+}
+
+.list{
+position: absolute;
+display: none;
+    background-color: rgb(9, 199, 199);
+    min-width:150px;
+}
+
+
+.list a{
+    text-align: center;
+    color: white;
+    background-color: rgb(35, 118, 243);
+    display: block;
+    text-decoration: none;
+}
+
+.list a:hover{
+    color:black;
+    background-color: white;
+}
+
+.main:hover .list{
+    display: block;
+}
+
+.main:hover .button:hover{
+    background-color: rgb(26, 203, 235);
+}
+
+
+
+

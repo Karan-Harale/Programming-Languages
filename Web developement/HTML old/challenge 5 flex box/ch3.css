@@ -1,0 +1,13 @@
+/* Removing the margin of the page */
+*{margin: 0%;}
+/* Changing display from default to flex of class named parent */
+.parent{
+    display: flex;
+}
+/* Changing display to flex of Nested class named child */
+.child{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+/* CSS of Challenge #7 Completed. */

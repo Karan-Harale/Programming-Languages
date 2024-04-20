@@ -1,0 +1,2 @@
+ State    avlbl_covbeds    avlbl_ventilbeds
+  Delhi         458                 351

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="stylesheet" href="payment form.css">
+    <title>Payment Form</title>
+</head>
+
+
+
+<body>
+    <div class="container">
+    <form action="">
+    <h1 >Payment Form</h1>
+    <hr>
+   <h2>Contact Details</h2>
+<P>  Name:<input type="text" name="Name" id="Name" required placeholder="ashutosh pote"></P>
+     
+<p>  Gender: <select name="gender" id="gender" required>
+    <option value="Male">Male</option>
+    <option value="Female">Female</option>
+    <option value="Other">Other</option>
+</select>
+
+<p>  Address: <textarea  name="Address" id="Address" cols="20" rows="5" placeholder="Address"></textarea> </p>
+<p>  Email: <input type="email" name="email" id="email"required placeholder="ashupote@gmail.com"></p>
+<p>  Pincode: <input type="number" name="pincode" id="pincode"required placeholder="123 456"></p>
+<hr>
+
+<h2>Card Details</h2>
+<p>Accepted Cards
+    <br>
+    <img src="cards.png" alt="Image" >
+    <br>
+   Card Type :  
+   <select name="card_type" id="card_type"required>
+        <option value="">--Select Card--</option>
+        <option value="Rupay">Rupay</option>
+        <option value="Visa">Visa</option> 
+        <option value="Mastercard">Mastercard</option>     
+        <option value="Maestro">Maestro</option>     
+
+     </select>
+</p>
+
+<p>   Card Number: <input type="number" name="card number" id="card number"required placeholder="1234 5678 9123 4567"></p>
+<p>Exp.Date: <input type="date" name="exp.date" id="exp.date"></p>    
+<p>   CVV : <input type="password" name="cvv" id="cvv"required > </p>
+
+<input type="submit" value="Pay Now" >
+</form>
+
+</div>
+
+<footer><a href="payment form page 2 using css.html" target="_blank"> Check Payment Status</a>
+</footer>
+</body>
+</html>

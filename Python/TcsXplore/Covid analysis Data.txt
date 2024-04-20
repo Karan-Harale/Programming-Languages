@@ -1,0 +1,2 @@
+   State    avlbl_covbeds    avlbl_ventilbeds
+1  Mah         456                  352

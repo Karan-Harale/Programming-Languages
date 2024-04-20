@@ -1,0 +1,69 @@
+body{
+    width: 100%;
+    height: 100%;
+}
+.container{
+    width: 30%;
+    border: 5px solid  black;
+    margin-left: 35%;
+    padding: 0px;
+   background-color: rgb(241, 232, 220);
+}
+
+h3,h4{
+    background-color: rgb(18, 127, 216);
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+h5,h6{
+    text-align: center;
+    color: grey;
+}
+
+#sinfo{
+    color: black;
+    text-align: left;
+}
+p{
+    margin-left: 20px;
+}
+
+.icont{
+    width: 150px;
+    border: 2px solid black;
+}
+input[type="text"],
+input[type="date"],
+input[type="email"],
+input[type="textarea"]{
+    width: 25%;
+    border:1px solid #ccc;
+    padding:10px;
+    border-radius:5px;
+    margin-left: 20px;
+}
+
+input[type="radio"]{
+margin: 10px;
+    border:1px solid #ccc;
+    border-radius:5px;
+}
+
+input[type="Submit"]{
+color: rgb(26, 23, 23);
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: aquamarine;
+ display: block;
+
+}
+input[type="Submit"]:hover{
+
+    background-color: aqua;
+    color: tomato;
+}
+
+

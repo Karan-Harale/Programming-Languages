@@ -1,0 +1,15 @@
+{
+    "files.associations": {
+        "iostream": "cpp",
+        "ostream": "cpp",
+        "xutility": "cpp",
+        "ranges": "cpp",
+        "span": "cpp",
+        "vector": "cpp",
+        "xstring": "cpp",
+        "queue": "cpp",
+        "utility": "cpp"
+    },
+    "workbench.colorTheme": "Default High Contrast Light",
+    "C_Cpp.errorSquiggles": "enabled"
+}

@@ -1,0 +1,31 @@
+table,
+tr,
+th,
+td {
+    border: 2px solid greenyellow;
+    
+    padding: 10px;
+    border-spacing: 5px;
+}
+
+th {
+    background-color: red;
+}
+
+td {
+    background-color: royalblue;
+}
+
+h1 {
+    background-color: khaki;
+    font-size: medium;
+    text-align: center;
+}
+
+a:hover{
+    color: lawngreen;
+}
+
+a:visited{
+    color: red;
+}

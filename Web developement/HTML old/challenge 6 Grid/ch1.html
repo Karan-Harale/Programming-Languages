@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge 1 grid</title>
+</head>
+
+<style>
+    .container{
+        display: grid;
+        grid-template-columns: repeat(6,1fr);
+        grid-gap: 10px;
+        grid-auto-rows: minmax(500px,auto);
+        text-align: center;
+        color: white;
+
+    }
+    
+
+    .column{
+        background-color: rgb(10, 109, 139);
+        
+    }
+
+    .column2{
+        display: grid;
+        grid-template-rows: repeat(2,1fr);
+            }
+    .nested-column2{
+        border: 2px solid white;
+    }
+
+    .column3{
+        display: grid;
+        grid-template-rows: repeat(3,1fr);
+            }
+    .nested-column3{
+        border: 2px solid white;
+    }
+
+     .column4{
+        display: grid;
+        grid-template-rows: repeat(4, 1fr);
+            }
+    .nested-column4{
+        border: 2px solid white;
+    }
+     .column5{
+        display: grid;
+        grid-template-rows: repeat(6,1fr);
+            }
+    .nested-column5{
+        border: 2px solid white;
+    } 
+    .column6{
+        display: grid;
+        grid-template-rows: repeat(12,1fr);
+            }
+    .nested-column6{
+        border: 2px solid white;
+    }
+
+</style>
+
+
+<body>
+
+    <div class="container">
+
+        <div class="column column1">1
+        </div>
+
+        <div class="column column2">
+            <div class="nested-column2">2</div>
+            <div class="nested-column2">3</div>
+        </div>
+        
+        <div class="column column3">
+            <div class="nested-column3">4</div>
+            <div class="nested-column3">5</div>
+            <div class="nested-column3">6</div>
+        </div>
+
+   
+
+
+        <div class="column column4">
+            <div class="nested-column4">7</div>
+            <div class="nested-column4">8</div>
+            <div class="nested-column4">9</div>
+            <div class="nested-column4">10</div>
+
+        </div>
+
+
+
+        <div class="column column5">
+            <div class="nested-column5">11</div>
+            <div class="nested-column5">12</div>
+            <div class="nested-column5">13</div>
+            <div class="nested-column5">14</div>
+            <div class="nested-column5">15</div>
+            <div class="nested-column5">16</div>
+
+        </div>
+
+
+        <div class="column column6">
+            <div class="nested-column6">17</div>
+            <div class="nested-column6">18</div>
+            <div class="nested-column6">19</div>
+            <div class="nested-column6">20</div>
+            <div class="nested-column6">21</div>
+            <div class="nested-column6">22</div>
+            <div class="nested-column6">23</div>
+            <div class="nested-column6">24</div>
+            <div class="nested-column6">25</div>
+            <div class="nested-column6">26</div>
+            <div class="nested-column6">27</div>
+            <div class="nested-column6">28</div>
+        </div>
+
+    </div>
+</body>
+</html>

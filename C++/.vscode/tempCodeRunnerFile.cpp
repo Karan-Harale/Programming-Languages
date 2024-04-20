@@ -1,0 +1,1 @@
+insertAtPosition(head, tail, 7, 10);

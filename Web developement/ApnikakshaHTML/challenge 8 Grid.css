@@ -1,0 +1,39 @@
+
+
+.container{
+    display: grid;
+grid-template-columns: repeat(5,1fr);
+grid-gap: 25px;
+grid-auto-rows: minmax(500px,auto);
+text-align: center;
+color: azure;
+}
+
+.items{
+    background-color: rgb(170, 211, 109);
+    border-radius: 5px;
+}
+
+.item2{
+        display: grid;
+    grid-template-rows: repeat(2,1fr);
+    grid-gap: 20px;
+}
+
+.item3{
+    display: grid;
+grid-template-rows: repeat(3,1fr);
+grid-gap: 20px;
+}
+
+.item4{
+    display: grid;
+grid-template-rows: repeat(6,1fr);
+grid-gap: 20px;
+}
+
+.item5{
+    display: grid;
+grid-template-rows: repeat(12,1fr);
+grid-gap: 20px;
+}

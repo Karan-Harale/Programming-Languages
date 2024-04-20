@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid ch2</title>
+
+    <style>
+        .mainbox{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            grid-gap: 10px;
+            grid-auto-rows: minmax(500px,auto);
+
+            text-align: center;
+            color: rgb(233, 233, 224);
+
+        }
+
+        .box{
+            background-color: rgb(207, 163, 18);
+        }
+
+
+        .box2{
+            display: grid;
+            grid-template-rows: repeat(3,1fr);
+        }
+       
+        .nest-box2{
+            border: 4px solid white;
+        }
+
+        .box3{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            border: 4px solid white;
+
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <div class="mainbox">
+        <div class="box box1">Nav</div>
+
+        <div class="box box2">
+            <div class="nest-box2">Header</div>
+
+            <div class="nest-box2  box3">Article
+
+            <div class="box3">AD</div>
+        </div>
+
+            <div class="nest-box2">Footer</div>
+        </div>
+
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,27 @@
+
+body{
+    display: flex;
+margin: 0%;
+}
+
+
+.Nav{
+
+    width: 20%;
+    height: 100vh;
+    background-color: rgb(194, 204, 178);
+font-weight: bold;
+}
+
+.Header{ 
+    font-weight: bold;
+
+width: 80vw;
+height: 25vh;
+background-color: rgb(149, 192, 85);
+}
+
+.Article{
+    height: 50vh;
+    font-weight: bold;
+}

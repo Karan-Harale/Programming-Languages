@@ -1,0 +1,35 @@
+
+
+div{
+    width: 200px;
+    height: 150;
+    background-color: rgb(12, 209, 235);
+    color: white;
+    padding: 10px;
+    text-align: center;
+    border: 2px solid rgb(70, 66, 66);
+    border-radius: 50%;
+    position: relative;
+animation-name: example;
+animation-duration: 2s;
+animation-direction: alternate;
+}
+
+
+@keyframes example{
+    0%{
+        background-color: rgb(23, 169, 236);
+        top: 0px;
+        
+    }
+    25%{
+        background-color: rgb(48, 235, 248);
+        top: 10px;
+        
+    }
+    100%{
+        background-color: rgb(99, 184, 206);
+        top: 30px;
+        
+    }
+}

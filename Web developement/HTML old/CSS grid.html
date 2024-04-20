@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+</head>
+
+<style>
+    .container{
+        display: grid;
+        grid-template-columns: repeat(auto-fill,minmax(200px,1fr));
+        grid-gap: 20px;
+        grid-auto-rows: minmax(50px,auto);
+        grid-auto-columns: minmax(50px,auto);
+                
+    }
+
+    .item{
+        color: white;
+        background-color: lightsalmon;
+        border: 4px solid green;
+        border-radius: 4px;
+ 
+    }
+
+    #item1{
+        grid-column-start: 1;
+        grid-column-end: 5;
+    
+    }
+
+    .item1-container{
+        display: grid;
+        color: yellow;
+        grid-auto-columns: repeat{3, 1fr};
+
+    }
+
+    .nest-item{
+        border:3px solid violet;
+        border-radius: 4px;
+        background-color: tomato;
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="item item1-container"  id="item1">
+            <div class="nest-item">bax me box 1</div>
+            <div class="nest-item">bax me box 2</div>
+            <div class="nest-item">bax me box 3</div>
+        </div>
+        <div class="item" id="item2">box 2</div>
+        <div class="item">box 3</div>
+        <div class="item">box 4</div>
+        <div class="item">box 5</div>
+        <div class="item">box 6</div>
+    </div>
+    
+</body>
+</html>

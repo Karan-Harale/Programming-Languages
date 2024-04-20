@@ -1,0 +1,262 @@
+create table employeedata (eid int not null,ename varchar(20),esalary int,eage int,egender varchar(20), edept varchar(20), primary key(eid));
+
+create table Department (did int not null,dname varchar(20),dlocation varchar(20));
+
+insert into employeedata values(1,'sam',95000,45,'male','Operations');
+insert into employeedata values(2,'bob',80000,21,'male','Support');
+insert into employeedata values(3,'anne',80000,21,'male','Analytics');
+insert into employeedata values(4,'julia',73000,30,'female','Analytics');
+insert into employeedata values(5,'matt',159000,33,'male','Sales');
+insert into employeedata values(6,'jeff',112000,27,'male','Operations');
+select * from employeedata;
+
+
+insert into Department values(1,'Content','New York');
+insert into Department values(2,'Support','Chicago');
+insert into Department values(3,'Analytics','New York');
+insert into Department values(4,'Sales','Baston');
+insert into Department values(5,'Tech','Dallas');
+insert into Department values(6,'Finance','Chicago');
+select * from Department;
+
+
+select employeedata.ename,employeedata.edept,Department.dname,Department.dlocation
+from employeedata
+inner join Department 
+on employeedata.edept=Department.dname;
+
+
+select employeedata.ename,employeedata.edept,Department.dname,Department.dlocation
+from employeedata
+left join Department 
+on employeedata.edept=Department.dname;
+
+
+select employeedata.ename,employeedata.edept,Department.dname,Department.dlocation
+from employeedata
+Right join Department 
+on employeedata.edept=Department.dname;
+
+select employeedata.ename,employeedata.edept,Department.dname,Department.dlocation
+from employeedata
+Full join Department 
+on employeedata.edept=Department.dname;
+
+-- update employeedata
+-- set eage=eage+10
+-- from employeedata
+-- join Department on employeedata.edept=Department.dname;
+
+select * from employeedata;
+
+-- delete employeedata
+-- from employeedata
+-- join Department on employeedata.edept=Department.dname
+-- where dlocation='New York';
+
+create table Student_Details2(s_id int not null,s_name varchar(20),s_marks int);
+insert into Student_Details2 values(3,'Anne',73);
+insert into Student_Details2 values(4,'Julia',92);
+insert into Student_Details2 values(5,'Matt',65);
+
+select * from Student_Details1
+union
+select * from Student_Details2;
+ 
+
+select * from Student_Details1
+union all
+select * from Student_Details2;
+ 
+
+select * from Student_Details1
+except
+select * from Student_Details2;
+
+
+select * from Student_Details1rrrrrrrrrrrrrrrrrrrrrrrrrrr
+intersect
+select * from Student_Details2;
+
+create table employeedata (eid int not null,ename varchar(20),esalary int,eage int,egender varchar(20), edept varchar(20), primary key(eid));
+
+create table Department (did int not null,dname varchar(20),dlocation varchar(20));
+
+insert into employeedata values(1,'sam',95000,45,'male','Operations');
+insert into employeedata values(2,'bob',80000,21,'male','Support');
+insert into employeedata values(2,'bob',80000,21,'male','Analytics');
+insert into employeedata values(4,'julia',73000,30,'female','Analytics');
+insert into employeedata values(5,'matt',159000,33,'male','Sales');
+insert into employeedata values(6,'jeff',112000,27,'male','Operations');
+select * from employeedata;
+
+
+
+create view females as
+select * from employeedata
+where egender='female'; 
+
+select * from females
+
+drop view females;
+
+
+
+ alter table Employeedata
+ add edob date
+
+ select * from Employeedata;
+
+
+
+ alter table Employeedata
+ drop edob 
+
+
+
+create table source_table (eid int not null,ename varchar(20),esalary int,eage int,egender varchar(20), edept varchar(20), primary key(eid));
+
+insert into  source_table values(1,'Sam',93000,40,'Male','Operations');
+insert into  source_table values(2,'Bob',80000,21,'Male','Support');
+insert into  source_table values(3,'Anne',113000,25,'Female','Analytics');
+
+insert into  source_table values(6,'Jeff',112000,27,'Male','Operations');
+insert into  source_table values(7,'Adam',110000,28,'Male','Content');
+insert into  source_table values(8,'Priya',85000,37,'Female','Tech');
+
+select * from target_table ; 
+
+ 
+create table target_table (eid int not null,ename varchar(20),esalary int,eage int,egender varchar(20), edept varchar(20), primary key(eid));
+
+insert into  target_table values(1,'Sam',95000,45,'Male','Operations');
+insert into  target_table values(2,'Bob',80000,21,'Male','Support');
+insert into  target_table values(3,'Anne',125000,25,'Female','Analytics');
+insert into  target_table values(4,'Julia',73000,30,'Female','Analytics');
+insert into  target_table values(5,'Matt',159000,33,'Male','Sales');
+insert into  target_table values(6,'Jeff',112000,27,'Male','Operations');
+
+select * from target_table ; 
+
+
+MERGE target_table as t
+using source_table as s
+on
+t.e_id=s.e_id
+when matched
+then update set t.e_salary = s.e_salary,t.e_age=s.e_age
+when not matched by target
+then insert (e_id,e_name,e_salary,e_age,e_gender,e_dept) values(s.e_id,s.e_name,s.e_salary,s.e_age,s.e_gender,s.e_dept)
+when not matched by source
+then delete;
+
+
+create table #stddata(sname varchar(20),sroll int);
+
+insert into #stddata values('ronak',11);
+
+
+select
+case
+when 10>20 then '10 is greater'
+
+when 10<20 then '10 is less'
+else 'equal'
+end
+
+
+select
+case
+when 100>20 then '10 is greater'
+
+when 10<20 then '10 is less'
+else 'equal'
+end
+
+
+select * from Employeedata 
+select *,grade=
+case
+when esalary>90000 then "C"
+when esalary<125000 then "B"
+when esalary>150000 then "A"
+else "A+"
+end
+from Employeedata
+go
+
+select
+iif(10>20,'greater','lesser');
+
+
+select eage,esalary,
+iif(esalary>100000,'A class','passed')as Grades from  Employeedata;
+
+
+create procedure findeages
+as
+select eage from Employeedata 
+go
+
+exec findeages;
+
+create procedure alldata
+as
+select * from Employeedata 
+go
+
+exec alldata;
+
+create Pocedure gender @gender varchar(20)
+as
+select * from Employeedata 
+where egender=@gender
+go
+
+exec gender @gender='male';
+
+declare @var1;
+declare @var2;
+
+begin try
+set @var1=8;
+set @var2=@ar1/0;
+end try
+
+begin catch
+print error_message (), 'error occured cannot go further'
+end catch
+
+
+
+begin try
+select ename+eage from Employeedata 
+end try
+
+begin catch
+print 'cant add int value with string value'
+end catch
+
+
+
+
+begin transaction
+update Employeedata set eage=22 where ename='julia'
+rollback transaction 
+
+begin try
+
+begin transaction
+update Employeedata set eage=45 where ename='sam'
+update Employeedata set eage=45/0 where ename='julia'
+commit transaction
+print'transaction commited//changed permanently'
+end try
+
+begin catch
+rollback transaction
+print'transaction rollbacked (updated to previous value)'
+end catch
+
+
+DataBase Administrator 
